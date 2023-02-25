@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Omar Salum">
+    <meta name="description" content="Portafolio de desarrollo web Omar Salum">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Omar Salum | Portfolio Personal</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/case.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Mi archivo CSS -->
+    <link rel="stylesheet" href="/style/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid"> <!-- 100% del ancho -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <!-- Para que el boton funcione, el id tiene que ser igual que el atributo data-base-targer -->
+                <a class="navbar-brand" href="#">
+                    <img src="img/case.png" width="50" alt="Logo de la página web">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch"> <!-- ATENCION! la primera clase es hecha por mi intentando dupliclar la última clase de bootstrap que hacen exactamente lo mismo -->
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center"> <!-- ATENCION! la primera clase es hecha por mi intentando dupliclar las últimas clases de bootstrap que hacen exactamente lo mismo -->
+            <img class="hero-imagen-desarrollador rounded-circle" src="img/me.jpg" alt="Foto de Omar Salum">
+            <h1>Hola, soy Omar Salum</h1>
+            <h2>Desarrollador entusiasta</h2>
+        </div>
+        <div>
+            <img class="hero-inferior-imagen img-fluid" src="img/technologies.png" alt="imagen HTML CSS JavaScript">
+        </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Sobre mi</h2>
+            <p class="seccion-texto">Autodidacta y apasionado por la tecnología desde temprana edad. Amante de los
+                nuevos desafíos y del trabajo en equipo.
+                Mi objetivo profesional es trabajar en una empresa para extender mis competencias
+                en el área de programación y poder desplegar todas mis habilidades para contribuir
+                con éxito los proyectos que se me asignen.</p>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+        <div class="container text-center">
+            <div class="row">
+                <!-- Desarrollo web -->
+                <div class="columna col-12 col-md-6"> <!-- 12 para pantalla completa y 4 para breakpoint en despositivos -->
+                    <i class="bi bi-laptop"></i>
+                    <p class="experiencia-titulo">Desarrollo Web</p>
+                    <p>Esta aplicación está hecha con HTML, CSS y JavaScript. El proyecto está estructurado por sectores en donde cada parte tiene sección, a medida que iba enmaquetando también iba aplicando estilos y, con un poco de ayuda de Bootstrap, la página web fue tomando forma y color. Como toda página tiene que tener su comportamiento, también se le aplicó JavaScript aunque no en gran medida porque se trata de una página de presentación pero cuando vaya haciendo proyectos más complejos, verán muchos más comportamientos complejos y robustos.
+                        Con el paso del tiempo cuando vaya mejorando mis habilidades como desarrollador, voy adaptando el proyecto para que se vea lo más profesional posible y si bien es básico a los ojos de gente con experiencia y expertos, para mi es un gran avance como desarrollador entusiasta.</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">HTML</span>
+                        <span class="badge text-bg-primary">CSS</span>
+                        <span class="badge text-bg-primary">JavaScript</span>
+                    </div>
+                </div>
+                <!-- Estudiante -->
+                <div class="columna col-12 col-md-6">
+                    <i class="bi bi-book-half"></i>
+                    <p class="experiencia-titulo">Estudiante</p>
+                    <p>Soy estudiante de la Facultad de Informática de la Universidad Nacional de La Plata que se encuentra en la ciudad de La Plata, provincia de Buenos Aires, Argentina. Si bien la facultad me da muchas herramientas de aprendisaje, mi otra forma de aprender y practicar es investigando por mi cuenta de manera autodidacta. Actualmente mis conocimientos son los que aparecen en el badge y seguiré aprendiendo más para agrandar mi repertorio de tecnologías.</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">Java</span>
+                        <span class="badge text-bg-primary">HTML</span>
+                        <span class="badge text-bg-primary">CSS</span>
+                        <span class="badge text-bg-primary">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos que a medida que voy creando, voy agregando al portfolio -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+        <h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
+        <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
+        <!-- Galeria proyectos -->
+        <div class="container text-center proyecto-contenedor">
+            <div class="row">
+                <!-- Proyecto 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/development.png" alt="Imagen proyecto1">
+                        <div class="overlay">
+                            <p>Proyecto 1</p>
+                            <div class="iconos-contenedor">
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="" target="_blank" rel="noopener noreferrer"> <!-- el contenido de rel permite que no haya inconvenientes al momento de relacionarse con enlaces indeseados -->
+                                    <i class="bi bi-laptop"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="img/development.png" alt="Imagen proyecto1">
+                        <div class="overlay">
+                            <p>Proyecto 2</p>
+                            <div class="iconos-contenedor">
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="" target="_blank" rel="noopener noreferrer"> <!-- el contenido de rel permite que no haya inconvenientes al momento de relacionarse con enlaces indeseados -->
+                                    <i class="bi bi-laptop"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="un-boton" href="#" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-info">
+                Ver más proyectos
+                <i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+        </a>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+            <div class="row">
+                <div class="col-12 col-md-4 seccion-titulo">
+                    Hablemos
+                </div>
+                <div class="col-12 col-md-4 descripcion">
+                    Contáctame
+                </div>
+                <div class="col-12 col-md-4">
+                    <a href="mailto:o.e.salum@gmail.com">
+                        <button type="button">
+                            Contacto
+                            <i class="bi bi-envelope-at"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+      </div>  
+    </section>
+
+    <!-- Footer -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="img/code-slash.svg" alt="imagen codigo">
+        <p class="footer-texto text-center">Aprendo y practico todos los días.<br></p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <a href="https://github.com/NotANull" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/omar-salum-331273206/" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:o.e.salum@gmail.com">
+                <i class="bi bi-envelope-at"></i>
+            </a>
+        </div>
+        <p class="footer-texto text-center">Tecnologías utilizadas para este proyecto.<br></p>
+        <div class="iconos-tecnologias d-flex flex-wrap align-items-center justify-content-center">
+            <i class="html fa-brands fa-html5"></i>
+            <i class="css fa-brands fa-css3-alt"></i>
+            <i class="js fa-brands fa-square-js"></i>
+            <i class="bootstrap fa-brands fa-bootstrap"></i>
+        </div>
+        <div class="cierre">Omar Salum</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c16c785459.js" crossorigin="anonymous"></script>
+    <script src="script/app.js"></script>
+</body>
+</html>
